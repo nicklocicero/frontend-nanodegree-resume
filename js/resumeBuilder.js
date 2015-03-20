@@ -1,12 +1,12 @@
 //var formattedName = HTMLheaderName.replace("%data%", "Nicholas LoCicero");
-//var formattedRole = HTMLheaderRole.replace("%data%", "Web Developer");
+//var formattedtitle = HTMLheadertitle.replace("%data%", "Web Developer");
 
-//$("#header").append([formattedName, formattedRole]);
+//$("#header").append([formattedName, formattedtitle]);
 
 
 var bio = {
   "name": "Nicholas LoCicero",
-  "role": "Web Developer",
+  "title": "Web Developer",
   "contactInfo": "Twitter @viraldreams",
   "picURL": "http://s3-2.kiva.org/img/w800/451751.jpg",
   "welcomeMessage": "Thank you for coming by!",
@@ -41,31 +41,62 @@ var education = {
 }
 
 var work = {
-  "Jobs": [
+  "jobs": [
     {
-      "company": "Zipfian Academy",
-      "role": "Consultant"
-      "description": "Student Career Services",
-      "year": "2014"
+      "employer": "Zipfian Academy",
+      "title": "Consultant",
+      "location": "San Francisco, CA",
+      "description": "Lead Generator for employer database and student Career Services.",
+      "dates": "March 2014"
     },
     {
-      "company": "Hack Reactor",
-      "role": "Consultant"
-      "description": "Student Career Services",
-      "year": "2014"
+      "employer": "Hack Reactor",
+      "title": "Consultant",
+      "location": "San Francisco, CA",
+      "description": "Lead Generator for employer database and student Career Services.",
+      "dates": "January 2014 - April 2014"
     },
     {
-      "company": "Task Rabbit",
-      "role": "Task Rabbit",
-      "description": "Tasked for Uber, Pinterest, Hipchat, Twilio, and more",
-      "year": "2013 - 2014"
+      "employer": "Task Rabbit",
+      "title": "Task Rabbit",
+      "location": "San Francisco, CA",
+      "description": "Task Rabbit for Uber, Pinterest, Hipchat, Twilio, and families.",
+      "dates": "September 2013 - April 2014"
+    },
+    {
+      "employer": "Self Employed",
+      "title": "Actor",
+      "location": "Los Angeles, CA",
+      "description": "Self employed actor. <a href='http://imdb.com/name/nm3002094/' target='_blank'>Check out my iMDB Resume!</a>",
+      "dates": "2007 - Present"
     }
   ]
 }
 
 var projects = {
-  "Projects": []
+  "projects": [
+    {
+      "title": "Python Grocery",
+      "dates": "January - March 2014",
+      "description": "Get a grocery list of foods that contain all nutrients your body needs.",
+      "pictures": "http://lorempixel.com/400/200/"
+    },
+    {
+      "title": "Fractal Maze",
+      "dates": "January - March 2014",
+      "description": "Generate fractals that are mazes and give to friends, or solve yourself.",
+      "pictures": "http://lorempixel.com/400/200/"
+    },
+    {
+      "title": "Starbucks Digi Kitchen",
+      "dates": "January - March 2014",
+      "description": "Make new drinks by playing around with all the ingredients in a Starbucks kitchen.",
+      "pictures": "http://lorempixel.com/400/200/"
+    }
+  ]
 }
+
+$("#mapDiv").append(googleMap);
 
 //$("#main").append([bio.currentJob, education["school"]]);
 
