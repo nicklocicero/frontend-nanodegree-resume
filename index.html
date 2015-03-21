@@ -42,11 +42,12 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <!-- More on helper.js in the class -->
   <script src="js/helper.js"></script>
 
+
   <!--
   Uncomment the <script> tag below when you're ready to add an interactive
   Google Map to your resume!
   -->
-  <!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
 
   <meta name="viewport" content="width=device-width">
 </head>
@@ -123,6 +124,28 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       return fullName;
     }
 
+    var formattedHeaderName = HTMLheaderName.replace("%data%", bio.name);
+    $("#header").append(formattedHeaderName);
+
+    var formattedHeaderRole = HTMLheaderRole.replace("%data%", bio.title);
+    $("#header").append(formattedHeaderRole);
+
+    var formattedMobile = HTMLmobile.replace("%data%", bio.mobile);
+    var formattedEmail = HTMLemail.replace("%data%", bio.email);
+    var formattedTwitter = HTMLtwitter.replace("%data%", bio.twitter);
+    var formattedGithub = HTMLgithub.replace("%data%", bio.github);
+    var formattedLocation = HTMLlocation.replace("%data%", bio.location);
+    var formattedBio = HTMLbioPic.replace("%data%", bio.pic);
+    var formattedWelcome = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
+
+    $('#header').append(formattedMobile);
+    $('#header').append(formattedEmail);
+    $('#header').append(formattedTwitter);
+    $('#header').append(formattedGithub);
+    $('#header').append(formattedLocation);
+    $('#header').append(formattedBio);
+    $('#header').append(formattedWelcome);
+
     if(bio.skills.length > 0) {
 
       $("#header").append(HTMLskillsStart);
@@ -189,7 +212,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       return locationArray;
     }
 
-    console.log(locationizer(work));
+    //console.log(locationizer(work));
 
     if(document.getElementsByClassName('flex-item').length === 0) {
       document.getElementById('topContacts').style.backgroundColor = 'black';

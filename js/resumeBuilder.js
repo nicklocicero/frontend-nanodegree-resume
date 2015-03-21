@@ -7,10 +7,14 @@
 var bio = {
   "name": "Nicholas LoCicero",
   "title": "Web Developer",
-  "contactInfo": "Twitter @viraldreams",
-  "picURL": "http://s3-2.kiva.org/img/w800/451751.jpg",
-  "welcomeMessage": "Thank you for coming by!",
-  "skills": ["hacking", "web-development", "resourcefulness"]
+  "mobile": "818.426.8117",
+  "email": "nick.locicero@gmail.com",
+  "twitter": "Twitter @viraldreams",
+  "github": "nicklocicero",
+  "location": "Santa Maria, CA",
+  "pic": "http://s3-2.kiva.org/img/w800/451751.jpg",
+  "welcomeMsg": "I love change and positive technological disruption!",
+  "skills": ["hacking", "web-development", "resourcefulness", "acting"]
 };
 
 var education = {
@@ -20,21 +24,21 @@ var education = {
           "majors": ["Art Practice"],
           "minor": ["Theater"],
           "years": "2005 to 2010",
-          "city": "Berkeley, CA",
+          "location": "Berkeley, CA",
           "graduation": "2010"
       },
       {
           "school": "Udacity",
           "major": "Nanodegree: Front-End Web Dev",
           "years": "2015",
-          "city": "online",
+          "location": "Santa Maria, CA",
           "graduation": "2015"
       },
       {
           "school": "Coursera",
           "major": "Specialization in Music",
           "years": "2014 - 2015",
-          "city": "online",
+          "location": "Albuquerque, NM",
           "graduation": "2015"
       }
   ]
@@ -79,19 +83,19 @@ var projects = {
       "title": "Python Grocery",
       "dates": "January - March 2014",
       "description": "Get a grocery list of foods that contain all nutrients your body needs.",
-      "pictures": "http://lorempixel.com/400/200/"
+      "image": "images/grocery.jpg"
     },
     {
       "title": "Fractal Maze",
       "dates": "January - March 2014",
       "description": "Generate fractals that are mazes and give to friends, or solve yourself.",
-      "pictures": "http://lorempixel.com/400/200/"
+      "image": "images/fractal.jpg"
     },
     {
-      "title": "Starbucks Digi Kitchen",
+      "title": "Digital Synth",
       "dates": "January - March 2014",
-      "description": "Make new drinks by playing around with all the ingredients in a Starbucks kitchen.",
-      "pictures": "http://lorempixel.com/400/200/"
+      "description": "Make new sounds with an interactive, digi synth.",
+      "image": "images/synth.jpg"
     }
   ]
 }
