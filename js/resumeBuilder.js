@@ -71,7 +71,7 @@ var work = {
       "employer": "Self Employed",
       "title": "Actor",
       "location": "Los Angeles, CA",
-      "description": "Self employed actor. <a href='http://imdb.com/name/nm3002094/' target='_blank'>Check out my iMDB Resume!</a>",
+      "description": "Self employed actor.",
       "dates": "2007 - Present"
     }
   ]
