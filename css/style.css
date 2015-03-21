@@ -110,13 +110,17 @@ a {
   clear:both;
 }
 
-.dark-gray {
-  background-color: #4A4A4A;
+.dark-blue {
+  background-color: #066;
+}
+
+.deep-blue {
+  background-color: #036;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #006;
 }
 
 .flex-box {

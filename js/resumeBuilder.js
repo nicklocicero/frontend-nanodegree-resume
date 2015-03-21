@@ -13,7 +13,7 @@ var bio = {
   "github": "nicklocicero",
   "location": "Santa Maria, CA",
   "pic": "http://s3-2.kiva.org/img/w800/451751.jpg",
-  "welcomeMsg": "I love change and positive technological disruption!",
+  "welcomeMsg": "I thirst for change and positive technological disruption!",
   "skills": ["hacking", "web-development", "resourcefulness", "acting"]
 };
 
