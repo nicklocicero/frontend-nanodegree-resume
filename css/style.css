@@ -68,7 +68,7 @@ h2, h3, h4, h5 {
 
 p {
   font-size: 14px;
-  color: #333333;
+  color: #007;
   line-height: 21px;
 }
 
@@ -81,6 +81,15 @@ a {
 
 a:hover {
   color: #22B;
+}
+
+#role {
+  color: #6F6;
+  font-weight: bold;
+}
+
+#projects {
+  background-color: #22F;
 }
 
 .welcome-message {
