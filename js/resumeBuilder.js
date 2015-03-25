@@ -9,8 +9,8 @@ var bio = {
   "title": "Web Developer",
   "mobile": "818.426.8117",
   "email": "nick.locicero@gmail.com",
-  "twitter": "Twitter @viraldreams",
-  "github": "nicklocicero",
+  "twitter": "<a href='https://twitter.com/viraldreams' class='header-a'>@viraldreams</a>",
+  "github": "<a href='https://github.com/nicklocicero' class='header-a'>nicklocicero</a>",
   "location": "Santa Maria, CA",
   "pic": "http://s3-2.kiva.org/img/w800/451751.jpg",
   "welcomeMsg": "I thirst for change and positive technological disruption!",
@@ -21,8 +21,8 @@ var education = {
   "schools": [
       {
           "school": "UC Berkeley",
-          "majors": ["Art Practice"],
-          "minor": ["Theater"],
+          "major": "Art Practice",
+          "minor": "Theater",
           "years": "2005 to 2010",
           "location": "Berkeley, CA",
           "graduation": "2010"
@@ -36,7 +36,7 @@ var education = {
       },
       {
           "school": "Coursera",
-          "major": "Specialization in Music",
+          "major": "Specialization: Music",
           "years": "2014 - 2015",
           "location": "Albuquerque, NM",
           "graduation": "2015"

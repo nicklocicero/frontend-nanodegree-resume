@@ -52,18 +52,17 @@ h2, h3, h4, h5 {
 .date-text {
   font-style: italic;
   font-size: 14px;
+  margin-right: 48px;
   color: #114;
   line-height: 16px;
-  float: left;
+  float: right;
 }
 
 .location-text {
   font-style: italic;
   font-size: 14px;
-  color: #999999;
+  color: #22F;
   line-height: 16px;
-  float: right;
-
 }
 
 p {
@@ -80,7 +79,7 @@ a {
 }
 
 a:hover {
-  color: #22B;
+  color: #22F;
 }
 
 #role {
@@ -92,6 +91,12 @@ a:hover {
   background-color: #22F;
 }
 
+.header-a {
+  color: #6F6;
+  margin-top: 10px;
+  display: inline;
+}
+
 .welcome-message {
   font-style: italic;
   font-size: 18px;
@@ -100,7 +105,7 @@ a:hover {
 }
 
 #skillsH3 {
-  color: #F5AE23;
+  color: #FFF;
   display: none;
 }
 
@@ -108,8 +113,8 @@ a:hover {
   background-color: #F5AE23;
 }
 
-.orange-text {
-  color: #F5AE23;
+.white-text-header {
+  color: #FFF;
 }
 
 .white-text {
@@ -135,9 +140,36 @@ a:hover {
   background-color: #036;
 }
 
+.light-blue-text {
+  color: #22F;
+}
+
+#education {
+  color: #22F;
+}
+
+.map-overlay {
+  background-color = #006;
+  color = #6F6;
+}
+
 /* TODO: Replace with image later */
 #header {
   background-color: #003;
+}
+
+#education {
+  background-color: #6F6;
+  padding-bottom: 20px;
+  color: #22F;
+}
+
+#mapDiv {
+  background-color: #22F;
+}
+
+#mapDiv h1 {
+  color: #6F6;
 }
 
 .flex-box {
@@ -171,6 +203,17 @@ img {
   padding: 10px;
 }
 
+.projects-a {
+  color: #6F6;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
+
+.projects-a:hover {
+  color: #DDF;
+}
+
 /* Bar chart stuff */
 .chart div {
   font: 10px sans-serif;
@@ -201,6 +244,9 @@ span {
   .biopic {
     width: 175px;
   }
+  img {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -212,6 +258,9 @@ span {
   }
   .welcome-message {
     display: none;
+  }
+  img {
+    width: 100%;
   }
 }
 
