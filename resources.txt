@@ -1,0 +1,5 @@
+List of resources:
+  - Polymer (but not fully used)
+  - jQuery API
+  - Google Maps API
+  - Electric Sheep (img)
