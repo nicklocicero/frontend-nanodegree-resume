@@ -15,15 +15,14 @@
   <!-- Functions to build site. -->
   <script src="js/helper.js"></script>
 
-
   <!-- Google Map in my resume! -->
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-
   <meta name="viewport" content="width=device-width">
+
 </head>
 <body unresolved>
+  <!-- Site skeleton. -->
   <div id="main">
-    <!-- Site skeleton. -->
     <div id="header" class="center-content clearfix header">
       <ul id="topContacts" class='flex-box'></ul>
     </div>
@@ -53,116 +52,12 @@
 
   <script type="text/javascript">
     // Just calling method objects from Resume Builder JSON Objects.
-
-    /*function inName(_name) {
-      var nameArray = _name.split(" ");
-      var firstName = nameArray[0];
-      var lastName = nameArray[1];
-      firstName = firstName.slice(0,1).toUpperCase + firstName.slice(1).toLowerCase();
-      lastName = lastName.toUpperCase();
-      var fullName = firstName + " " + lastName;
-      return fullName;
-    }
-
-    var formattedHeaderName = HTMLheaderName.replace("%data%", bio.name);
-    $("#header").append(formattedHeaderName);
-
-    var formattedHeaderRole = HTMLheaderRole.replace("%data%", bio.title);
-    $("#header").append(formattedHeaderRole);
-
-    var formattedMobile = HTMLmobile.replace("%data%", bio.mobile);
-    var formattedEmail = HTMLemail.replace("%data%", bio.email);
-    var formattedTwitter = HTMLtwitter.replace("%data%", bio.twitter);
-    var formattedGithub = HTMLgithub.replace("%data%", bio.github);
-    var formattedLocation = HTMLlocation.replace("%data%", bio.location);
-    var formattedBio = HTMLbioPic.replace("%data%", bio.pic);
-    var formattedWelcome = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
-
-    $('#header').append(formattedMobile);
-    $('#header').append(formattedEmail);
-    $('#header').append(formattedTwitter);
-    $('#header').append(formattedGithub);
-    $('#header').append(formattedLocation);
-    $('#header').append(formattedBio);
-    $('#header').append(formattedWelcome);
-
-    if(bio.skills.length > 0) {
-
-      $("#header").append(HTMLskillsStart);
-
-      for(i in bio.skills){
-        var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
-        $("#skills").append(formattedSkill);
-      }
-    }*/
-
     bio.display();
-
-    /*function displayWork() {
-      for(job in work.jobs) {
-        $("#workExperience").append(HTMLworkStart);
-
-
-        var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
-        if(work.jobs[job].employer === "Self Employed") {
-          formattedEmployer = formattedEmployer.replace("#", "http://www.imdb.com/name/nm3002094/");
-        }
-        var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-        var formattedEmployerTitle = formattedEmployer + formattedTitle;
-        $(".work-entry:last").append(formattedEmployerTitle);
-
-        var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-        $(".work-entry:last").append(formattedDates);
-
-        var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
-        $(".work-entry:last").append(formattedDescription);
-      }
-    }*/
-
     work.display();
-
-    /*projects.display = function() {
-      for(project in projects.projects) {
-        $("#projects").append(HTMLprojectStart);
-
-        var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-        $(".project-entry:last").append(formattedTitle);
-
-        var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
-        $(".project-entry:last").append(formattedDates);
-
-        var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-        $(".project-entry:last").append(formattedDescription);
-
-        var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].image);
-        $(".project-entry:last").append(formattedImage);
-      }
-    }*/
-
     projects.display();
-
-    /*education.display = function() {
-      for(school in education.schools) {
-        $("#education").append(HTMLschoolStart);
-
-        var formattedSchool = HTMLschoolName.replace("%data%", education.schools[school].school);
-        $(".education-entry:last").append(formattedSchool);
-
-        var formattedMajor = HTMLschoolDegree.replace("%data%", education.schools[school].major);
-        $(".education-entry:last").append(formattedMajor);
-
-        var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].years);
-        $(".education-entry:last").append(formattedDates);
-
-        var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-        $(".education-entry:last").append(formattedLocation);
-      }
-    }*/
-
     education.display();
 
-    $(document).click(function(loc) {console.log(loc.pageX, loc.pageY)});
-
+    // Logging some clicks for the lulz ;)
     $(document).click(function(loc) {
       var x = loc.pageX;
       var y = loc.pageY;
@@ -170,37 +65,6 @@
       logClicks(x,y);
     });
 
-    function locationizer(work) {
-      locationArray = [];
-      for(item in work.jobs) {
-        locationArray.push(work.jobs[item].location);
-      }
-      return locationArray;
-    }
-
-    //console.log(locationizer(work));
-
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.backgroundColor = 'black';
-    }
-    if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.backgroundColor = 'black';
-    }
-    if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.backgroundColor = 'black';
-    }
-    if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.backgroundColor = 'black';
-    }
-    if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.backgroundColor = 'black';
-    }
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('letsConnect').style.backgroundColor = 'black';
-    }
-    if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.backgroundColor = 'black';
-    }
   </script>
 </body>
 </html>
