@@ -47,39 +47,14 @@
     </div>
   </div>
 
-  <!--
-  The next line tells the browser where to download the JavaScript file you'll be
-  writing. In resumeBuilder.js, you'll be writing code that builds the resume
-  dynamically when this website, index.html, is opened.
-  -->
+  <!-- Content for index skeleton. -->
   <script src="js/resumeBuilder.js"></script>
 
 
-  <!--
-  These scripts are written in JavaScript. You'll be breaking them down as part of
-  a quiz. Essentially, the next few lines are checking to see if you have not
-  changed each section of the resume. If you have not made any changes to a section
-  of the resume, then that part of the resume does not show up. More on this in the
-  course.
-  -->
-
   <script type="text/javascript">
-    // Notice how all of a sudden there's JavaScript inside this HTML
-    // document? You can write JavaScript between <script> tags. At the end of your
-    // JavaScript, don't forget the closing script tag with the slash (/).
+    // Just calling method objects from Resume Builder JSON Objects.
 
-
-    // Also, this is a JavaScript style comment. You can comment in JavaScript with:
-
-    //   two slashes for all following characters on a single line, or
-
-    /*
-        an opening and closing set of slash asterisks for block comments.
-    */
-
-    //$("#main").append(internationalizeButton);
-
-    function inName(_name) {
+    /*function inName(_name) {
       var nameArray = _name.split(" ");
       var firstName = nameArray[0];
       var lastName = nameArray[1];
@@ -119,9 +94,11 @@
         var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
         $("#skills").append(formattedSkill);
       }
-    }
+    }*/
 
-    function displayWork() {
+    bio.display();
+
+    /*function displayWork() {
       for(job in work.jobs) {
         $("#workExperience").append(HTMLworkStart);
 
@@ -140,11 +117,11 @@
         var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
         $(".work-entry:last").append(formattedDescription);
       }
-    }
+    }*/
 
-    displayWork();
+    work.display();
 
-    projects.display = function() {
+    /*projects.display = function() {
       for(project in projects.projects) {
         $("#projects").append(HTMLprojectStart);
 
@@ -160,11 +137,11 @@
         var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].image);
         $(".project-entry:last").append(formattedImage);
       }
-    }
+    }*/
 
     projects.display();
 
-    education.display = function() {
+    /*education.display = function() {
       for(school in education.schools) {
         $("#education").append(HTMLschoolStart);
 
@@ -180,7 +157,7 @@
         var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
         $(".education-entry:last").append(formattedLocation);
       }
-    }
+    }*/
 
     education.display();
 
